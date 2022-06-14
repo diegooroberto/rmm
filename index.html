@@ -1,0 +1,35 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <title> Gerador de Assinatura | Ruy de Mello Miller (RMM) </title>
+</head>
+
+<body>
+  <div class="container">
+      <h2> GERADOR DE ASSINATURA DE E-MAIL | RMM </h2>
+      <div class="box"> 
+          <label> Nome: <input type="text" name="nome" id="nome" size="38"></label><br>
+          <label> Pronomes/Gênero:
+              <select name="pronome" id="pronome">
+                  <option value="a/ela/dela">a/ela/dela</option>
+                  <option value="o/ele/dele">o/ele/dele</option>
+                  <option value="x/ile/dile">x/ile/dile</option>
+              </select> <a href="#" onClick="alert('Caso seja necessário cadastrar uma nova classe de pronome, por gentileza, encaminhar um e-mail para o técnico em TI!')"> &tridot; </a></label> 
+          <label> Cargo: <input type="text" name="cargo" id="cargo" size="38"></label><br>
+          <label> Celular/Telefone: <input type="text" name="telefone" id="telefone" size="28"></label><br>
+          <label> Perfil LinkedIn: <br> <input type="text" name="linkedin" id="linkedin" size="45" placeholder="Exemplo: www.linkedin.com/in/SEUNOME"></label><br>
+          
+          <button type="button" onclick="gerar();"> Gerar Assinatura </button>
+      </div>
+  </div>
+  
+  <div>
+      <div class="box2">
+          <div id="conteudo"></div><br>
+          <div id="conteudo2"></div>
+      </div>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
